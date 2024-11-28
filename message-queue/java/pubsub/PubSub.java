@@ -21,7 +21,7 @@ public class PubSub<T> {
      * @param subscriber The subscriber instance.
      */
     public void subscribe(String topic, Subscriber<T> subscriber) {
-         // computeIfAbsent is used to get the list of subscribers for a topic. If the topic is not present, it creates a new list and adds the subscriber to it.
+        // computeIfAbsent is used to get the list of subscribers for a topic. If the topic is not present, it creates a new list and adds the subscriber to it.
         subscribersTopicMap.computeIfAbsent(topic, k -> Collections.synchronizedList(new ArrayList<>())).add(subscriber);        
         System.out.println("Subscriber " + subscriber.getId() + " subscribed to topic: " + topic);
     }
