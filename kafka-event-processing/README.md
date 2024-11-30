@@ -12,12 +12,13 @@ A simple demo application showcasing the capabilities of **Apache Kafka** using 
 
 ## 🏗 Architecture
 
+```bash
 [Producer] ---> [Kafka Topic: events] 
                             | 
                 ----------------------------- 
                 |                           | 
         [Logger Consumer]          [Analytics Consumer]
-
+```
 
 ## 🛠 Prerequisites
 
@@ -32,4 +33,4 @@ A simple demo application showcasing the capabilities of **Apache Kafka** using 
 ```bash
 git clone https://github.com/yourusername/kafka-event-processing.git
 cd kafka-event-processing
-
+```
