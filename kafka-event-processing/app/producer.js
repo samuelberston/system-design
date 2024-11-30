@@ -16,6 +16,9 @@ const events = [
   { userId: 2, action: 'login', timestamp: Date.now() },
   { userId: 1, action: 'upload_photo', timestamp: Date.now() },
   // Add more events as needed
+  { userId: 3, action: 'signup', timestamp: Date.now() },
+  { userId: 4, action: 'login', timestamp: Date.now() },
+  { userId: 3, action: 'upload_photo', timestamp: Date.now() },
 ];
 
 // Function to send events
