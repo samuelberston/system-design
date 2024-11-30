@@ -2,27 +2,6 @@
 
 A simple demo application showcasing the capabilities of **Apache Kafka** using Node.js. This project demonstrates Kafka's strengths in handling high-throughput, fault-tolerant, and scalable data streams through a real-time event processing system.
 
-## 📚 Table of Contents
-
-- [Features](#features)
-- [Architecture](#architecture)
-- [Prerequisites](#prerequisites)
-- [Setup Instructions](#setup-instructions)
-  - [1. Clone the Repository](#1-clone-the-repository)
-  - [2. Start Kafka and Zookeeper with Docker](#2-start-kafka-and-zookeeper-with-docker)
-  - [3. Create Kafka Topic](#3-create-kafka-topic)
-- [Running the Application](#running-the-application)
-  - [1. Install Dependencies](#1-install-dependencies)
-  - [2. Start Consumers](#2-start-consumers)
-    - [Logger Consumer](#logger-consumer)
-    - [Analytics Consumer](#analytics-consumer)
-  - [3. Run the Producer](#3-run-the-producer)
-- [Project Structure](#project-structure)
-- [Troubleshooting](#troubleshooting)
-- [Further Enhancements](#further-enhancements)
-- [Resources](#resources)
-- [License](#license)
-
 ## 🚀 Features
 
 - **Producer:** Simulates real-time user events and publishes them to a Kafka topic.
