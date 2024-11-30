@@ -8,3 +8,10 @@ This repository contains implementations of common system design patterns and co
 - message queue
 - kafka
 - load balancer
+
+To do:
+- event driven architecture
+- circuit breaker
+- expiry cache
+- caching with redis
+- load balancer with nginx
