@@ -4,7 +4,16 @@ const { Kafka } = require('kafkajs');
 // Initialize Kafka
 const kafka = new Kafka({
   clientId: 'event-producer',
-  brokers: ['localhost:9092'],
+  brokers: [
+    'kafka-nlb.your-domain.com:9092'  // Your NLB DNS name
+  ],
+  // SSL configuration if enabled
+  ssl: true,
+  sasl: {
+    mechanism: 'plain',
+    username: process.env.KAFKA_USERNAME,
+    password: process.env.KAFKA_PASSWORD
+  }
 });
 
 // Create a producer
@@ -15,7 +24,6 @@ const events = [
   { userId: 1, action: 'signup', timestamp: Date.now() },
   { userId: 2, action: 'login', timestamp: Date.now() },
   { userId: 1, action: 'upload_photo', timestamp: Date.now() },
-  // Add more events as needed
   { userId: 3, action: 'signup', timestamp: Date.now() },
   { userId: 4, action: 'login', timestamp: Date.now() },
   { userId: 3, action: 'upload_photo', timestamp: Date.now() },
