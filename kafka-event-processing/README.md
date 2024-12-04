@@ -34,3 +34,11 @@ A simple demo application showcasing the capabilities of **Apache Kafka** using 
 git clone https://github.com/yourusername/kafka-event-processing.git
 cd kafka-event-processing
 ```
+### Create kafka topic
+```bash
+docker exec -it kafka-event-processing-kafka-1 kafka-topics.sh --create --topic events --bootstrap-server localhost:9092
+```
+### List kafka topics
+```bash
+docker exec -it kafka-event-processing-kafka-1 kafka-topics.sh --list --bootstrap-server localhost:9092
+```

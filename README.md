@@ -10,8 +10,8 @@ This repository contains implementations of common system design patterns and co
 - load balancer
 
 To do:
+- NGINX
 - event driven architecture
-- circuit breaker
 - expiry cache
-- caching with redis
-- load balancer with nginx
+- Redis
+- Samza
